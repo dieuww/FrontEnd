@@ -21,7 +21,15 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 40em) {
+body > header h1:first-of-type {
+    display: none;
+}
+
+body > header p:first-of-type {
+    display: none;
+    }
+
+@media screen and (max-device-width: 20em) {
 /*    Header img, zoekenbalk profiel*/
     body p {
     font-size: 0.9em;
@@ -52,14 +60,6 @@ body {
 
     body > header p a {
         color: #f2cb30;
-    }
-
-    body > header h1:first-of-type {
-        display: none;
-    }
-
-    body > header p:first-of-type {
-        display: none;
     }
 
     body header > img {
@@ -246,20 +246,26 @@ body {
         margin-top: 0;
     }
 
-    .related > article p {
-        margin-bottom: 0;
+    .related h3 {
+        color: white;
+        background-color: #f2cb30;
+        padding: 0.7em 0em 0.7em 1em;
+        margin-top: 0;
     }
 
     section h4 {
         font-size: 1em;
         padding-left: 0.7em;
         margin-bottom: 0;
+        margin-top: 0;
     }
 
     ul {
         margin-top: 0;
         list-style-type: none;
         font-size: 0.9em;
+        margin-bottom: 0;
+        padding-bottom: 1em;
     }
 
     a {
@@ -316,10 +322,12 @@ body {
 
     #credits h2{
         margin-bottom: 0;
-        padding-left: 2em;
+        padding-bottom: 0.3em;
+        padding-left: 1.5em;
         color: white;
         font-size: 0.9em;
         background-color: #f2cb30;
+        padding-top: 0.5em;
     }
 
     footer p {
@@ -338,6 +346,7 @@ body {
 
     #feedback {
         background-color: #f2cb30;
+        padding-bottom: 0.5em;
     }
 
     #feedback a {
@@ -345,16 +354,56 @@ body {
     }
 }
 
-@media screen and (min-width: 41em) and (max-width: 49em) {
+@media screen and (min-device-width: 20em) {
+    body {
+        background-color: aqua;
+    }
+
     body > header img {
         width: 50%;
         display: block;
     }
 
+    body > header nav {
+        width: inherit;
+        height: 5%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
     body > header nav ul {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
+        display: inline-block;
         padding-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: justify;
+        list-style-type: none;
+    }
+
+    body > header nav ul li {
+        background: #f2cb30;;
+        padding-left: 0em;
+        padding-right: 2.5em;
+        height: 2em;
+        white-space: nowrap;
+        padding-top: 0.8em;
+    }
+
+    body > header nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    body > header nav ul li:first-of-type {
+        padding-left: 0.7em;
+    }
+
+    body > header nav ul li:last-of-type {
+        padding-right: 0.7em;
     }
 }
