@@ -29,7 +29,7 @@ body > header p:first-of-type {
     display: none;
     }
 
-@media screen and (max-device-width: 20em) {
+@media screen and (max-width: 40em) {
 /*    Header img, zoekenbalk profiel*/
     body p {
     font-size: 0.9em;
@@ -354,7 +354,7 @@ body > header p:first-of-type {
     }
 }
 
-@media screen and (min-device-width: 20em) {
+@media screen and (min-width: 40em) {
     body {
         background-color: aqua;
     }
