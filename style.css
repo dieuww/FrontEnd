@@ -1,0 +1,360 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.option {
+    display: none;
+}
+
+.option.showfield {
+    display: block;
+}
+
+#sitemap {
+    display: none;
+}
+
+#search {
+    display: none;
+}
+
+@media screen and (max-width: 40em) {
+/*    Header img, zoekenbalk profiel*/
+    body p {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    }
+
+    body header > form {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    .to-profile {
+        position: absolute;
+        top: 4.5em;
+        right: 1em;
+    }
+
+    body > header p {
+        margin-right: 0.5em;
+        font-size: 0.7em;
+        color: white;
+        display: block;
+        margin-top: 0;
+    }
+
+    body > header p a {
+        color: #f2cb30;
+    }
+
+    body > header h1:first-of-type {
+        display: none;
+    }
+
+    body > header p:first-of-type {
+        display: none;
+    }
+
+    body header > img {
+        display: block;
+        width: 40%;
+        background-color: #f2cb30;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 1.5em 1.5em 1.5em 1.5em;
+        margin-left: 0.5em;
+    }
+
+    /* Scrolling nav bar    */
+    body > header nav {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        overflow-scrolling: touch;
+        width: 100%;
+        height: 5%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    body > header nav ul {
+        display: inline-block;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: justify;
+        list-style-type: none;
+    }
+
+    body > header nav ul li {
+        background: #f2cb30;;
+        padding-left: 0em;
+        padding-right: 2.5em;
+        height: 2em;
+        white-space: nowrap;
+        padding-top: 0.8em;
+    }
+
+    body > header nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    body > header nav ul li:first-of-type {
+        padding-left: 0.7em;
+    }
+
+    body > header nav ul li:last-of-type {
+        padding-right: 0.7em;
+    }
+
+/*    Main tekst*/
+    main {
+        background-color: rgba(232, 203, 50, 0.2);
+        padding-bottom: 1em;
+    }
+
+    h1 {
+        color: #f2cb30;
+        font-size: 1.7em;
+        margin: 0;
+        padding-top: 0.5em;
+        padding-left: 0.7em;
+    }
+
+    h1 a {
+        color: #f2cb30;
+        font-size: 1.3em;
+        margin: 0;
+        padding-top: 0.5em;
+        padding-left: 0.7em;
+    }
+
+    main > p a {
+        color: #f2cb30;
+    }
+
+/*    Main formulier*/
+    main > form {
+        display: block;
+    }
+
+    main > form fieldset {
+        border: 0;
+        padding: 0;
+    }
+
+    fieldset h3 {
+        background-color: #f2cb30;
+        padding-left: 2%;
+        font-size: 1.1em;
+        width: 70%;
+        color: white;
+        height: 1.5em;
+        border-radius: 2em 2em 2em 2em;
+        margin-bottom: 0;
+    }
+
+    fieldset legend {
+        font-size: 1em;
+        color: #f2cb30;
+        padding-top: 2em;
+    }
+
+    #stage fieldset:first-of-type {
+        padding-top: 0;
+    }
+    fieldset:nth-child(4) {
+        font-size: 0.95em;
+    }
+
+    fieldset label span {
+        font-size: 0.9em;
+    }
+
+    main form fieldset > label {
+        display: block;
+        padding-left: 2em;
+    }
+
+    main form fieldset label span{
+        font-size: 0.9em;
+    }
+
+    main form fieldset label > input {
+        display: inline-block;
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    main form fieldset label input > em {
+        display: block;
+        position: absolute;
+        color: aqua;
+    }
+
+    #aanmelden {
+        display: block;
+        margin-top: 1em;
+        background-color: #f2cb30;
+        color: white;
+        font-size: 1em;
+        border: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    picture > img {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+/*    Project moet ik rennen*/
+    article:nth-child(even) {
+        background-color: rgba(232, 203, 50, 0.2);
+    }
+
+    section h2 {
+        font-size: 1.5em;
+        color: #f2cb30;
+        padding-left: 0.7em;
+    }
+
+    h2 a {
+        font-size: 1.2em;
+        color: #f2cb30;
+        text-decoration: none;
+    }
+
+    aside > article h3 {
+        font-size: 1.2em;
+        color: white;
+        background-color: #f2cb30;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .related > article p {
+        margin-bottom: 0;
+    }
+
+    section h4 {
+        font-size: 1em;
+        padding-left: 0.7em;
+        margin-bottom: 0;
+    }
+
+    ul {
+        margin-top: 0;
+        list-style-type: none;
+        font-size: 0.9em;
+    }
+
+    a {
+        color: #f2cb30;
+        font-size: 0.9em;
+    }
+
+    dt {
+        font-weight: 600;
+        color: #f2cb30;
+        font-size: 0.9em;
+    }
+
+    dd {
+        margin-left: 0;
+        font-size: 0.9em;
+    }
+
+    dl {
+        font-size: 0.9em;
+        padding-left: 3em;
+        margin-top: 0;
+    }
+
+    aside article h3 {
+        font-size: 1.1em;
+        color: #f2cb30;
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        text-align: center;
+        padding-top: 1em;
+        margin-top: 0;
+    }
+
+    aside article p {
+        margin-bottom: 0;
+        padding-bottom: 1.2em;
+        font-size: 0.85em;
+    }
+
+    aside video {
+        width: 100%;
+    }
+
+    #contact h2{
+        margin-bottom: 0;
+        padding-left: 2em;
+    }
+
+    #about h2{
+        margin-bottom: 0;
+        padding-left: 2em;
+    }
+
+    #credits h2{
+        margin-bottom: 0;
+        padding-left: 2em;
+        color: white;
+        font-size: 0.9em;
+        background-color: #f2cb30;
+    }
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9em;
+    }
+
+    #credits p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9em;
+        background-color: #f2cb30;
+        color: white;
+    }
+
+    #feedback {
+        background-color: #f2cb30;
+    }
+
+    #feedback a {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 41em) and (max-width: 49em) {
+    body > header img {
+        width: 50%;
+        display: block;
+    }
+
+    body > header nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding-left: 0;
+    }
+}
