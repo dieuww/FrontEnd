@@ -29,7 +29,7 @@ body > header p:first-of-type {
     display: none;
     }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 35em) {
 /*    Header img, zoekenbalk profiel*/
     body p {
     font-size: 0.9em;
@@ -41,7 +41,11 @@ body > header p:first-of-type {
     body header > form {
         position: absolute;
         top: 1em;
-        right: 1em;
+        right: 0;
+    }
+
+    body header > form input{
+        width: 40%;
     }
 
     .to-profile {
@@ -224,15 +228,16 @@ body > header p:first-of-type {
         background-color: rgba(232, 203, 50, 0.2);
     }
 
-    section h2 {
+    aside h2 {
         font-size: 1.5em;
-        color: #f2cb30;
-        padding-left: 0.7em;
+        background-color: #f2cb30;
+        text-align: center;
+        margin-bottom: 0;
     }
 
     h2 a {
         font-size: 1.2em;
-        color: #f2cb30;
+        color: white;
         text-decoration: none;
     }
 
@@ -306,18 +311,21 @@ body > header p:first-of-type {
         font-size: 0.85em;
     }
 
-    aside video {
+    video {
         width: 100%;
     }
 
     #contact h2{
         margin-bottom: 0;
-        padding-left: 2em;
+        padding-left: 1.5em;
+        font-size: 0.9em;
+        color: #f2cb30;
     }
 
     #about h2{
         margin-bottom: 0;
-        padding-left: 2em;
+        padding-left: 1.5em;
+        color: #f2cb30;
     }
 
     #credits h2{
@@ -354,9 +362,12 @@ body > header p:first-of-type {
     }
 }
 
-@media screen and (min-width: 40em) {
+/*-------------------------------------------------------------*/
+/*-----------------------MEDIA TOT 50 EM-----------------------*/
+
+@media screen and (min-width: 35em) and (max-width: 50em) {
     body {
-        background-color: aqua;
+        background-color: white;
     }
 
     body > header img {
@@ -364,19 +375,65 @@ body > header p:first-of-type {
         display: block;
     }
 
+    body p {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+
+    body header > form {
+        position: absolute;
+        top: 1em;
+        right: 0;
+    }
+
+    body header > form input{
+        width: 60%;
+    }
+
+    .to-profile {
+        position: absolute;
+        top: 4.5em;
+        right: 1em;
+    }
+
+    body > header p {
+        margin-right: 0.5em;
+        font-size: 0.7em;
+        color: white;
+        display: block;
+        margin-top: 0;
+    }
+
+    body > header p a {
+        color: #f2cb30;
+    }
+
+    body header > img {
+        display: block;
+        width: 40%;
+        background-color: #f2cb30;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 1.5em 1.5em 1.5em 1.5em;
+        margin-left: 0.5em;
+    }
+
+    /* nav bar    */
     body > header nav {
-        width: inherit;
+        width: 100%;
         height: 5%;
         margin-top: 1em;
         margin-bottom: 1em;
     }
 
     body > header nav ul {
-        display: inline-block;
+        width: 100%;
         padding-left: 0;
+        padding-bottom: 0;
         display: flex;
         align-items: center;
+        background-color: #f2cb30;
         flex-direction: row;
+        justify-content: space-between;
         text-align: justify;
         list-style-type: none;
     }
@@ -406,4 +463,922 @@ body > header p:first-of-type {
     body > header nav ul li:last-of-type {
         padding-right: 0.7em;
     }
+
+/*    Main tekst*/
+    main {
+        background-color: rgba(232, 203, 50, 0.2);
+        padding-bottom: 1em;
+    }
+
+    h1 {
+        color: #f2cb30;
+        font-size: 2em;
+        margin: 0;
+        padding-top: 1em;
+        text-align: center;
+    }
+
+    h1 a {
+        color: #f2cb30;
+        font-size: 1.3em;
+        margin: 0;
+        padding-top: 0.5em;
+        padding-left: 0.7em;
+    }
+
+    main > p a {
+        color: #f2cb30;
+    }
+
+/*    Main formulier*/
+    main > form fieldset {
+        border: 0;
+        padding: 0;
+    }
+
+    #p p {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    fieldset h3 {
+        background-color: #f2cb30;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.1em;
+        width: 30%;
+        color: white;
+        height: 1.5em;
+        border-radius: 2em 2em 2em 2em;
+        margin-bottom: 0;
+        padding-left: 2em;
+    }
+
+    fieldset legend {
+        font-size: 1em;
+        color: #f2cb30;
+        padding-top: 2em;
+    }
+
+    #stage fieldset:first-of-type {
+        padding-top: 0;
+    }
+    fieldset:nth-child(4) {
+        font-size: 0.95em;
+    }
+
+    fieldset label span {
+        font-size: 0.9em;
+    }
+
+    main form fieldset > label {
+        display: block;
+        padding-left: 15.5em;
+        padding-top: 0.5em;
+    }
+
+    main form fieldset label span{
+        font-size: 0.9em;
+    }
+
+    main form fieldset label > input {
+        display: inline-block;
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    main form fieldset label input > em {
+        display: block;
+        position: absolute;
+        color: aqua;
+    }
+
+    #aanmelden {
+        display: block;
+        margin-top: 1em;
+        background-color: #f2cb30;
+        color: white;
+        font-size: 1em;
+        border: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    picture > img {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+/*    Project moet ik rennen*/
+    aside h2 {
+        font-size: 1.5em;
+        color: #f2cb30;
+        padding-left: 0.7em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: #f2cb30;
+        text-align: center;
+    }
+
+    h2 a {
+        font-size: 1.2em;
+        color: #f2cb30;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    aside > section:first-of-type {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    aside > section:last-of-type {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    aside > section > article {
+        width: 30%;
+        margin: 0 0.3em 0.6em 0.3em;
+        padding: 0.2em 0.2em 0.2em 0.5em;
+        background-color: rgba(232, 203, 50, 0.2);
+    }
+
+    aside > article h3 {
+        font-size: 1.2em;
+        color: white;
+        background-color: #f2cb30;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .related {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-content: flex-start;
+    }
+
+    .related article {
+        width: 47%;
+        border: 3%;
+        border-style: solid;
+        border-color: #f2cb30;
+        margin-bottom: 1em;
+    }
+
+    .related h3 {
+        color: white;
+        width: 100%;
+        background-color: #f2cb30;
+        padding: 0.7em 0em 0.7em 0em;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .related p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    section h4 {
+        font-size: 1em;
+        padding-left: 0.5em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .related li {
+        padding-left: 0.5em;
+    }
+
+    ul {
+        margin-top: 0;
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-bottom: 0;
+        padding-bottom: 1em;
+        padding-left: 0;
+    }
+
+    a {
+        color: #f2cb30;
+        font-size: 0.9em;
+    }
+
+    dt {
+        font-weight: 600;
+        color: #f2cb30;
+        font-size: 0.9em;
+    }
+
+    dd {
+        margin-left: 0;
+        font-size: 0.9em;
+    }
+
+    dl {
+        font-size: 0.9em;
+        padding-left: 3em;
+        margin-top: 0;
+    }
+
+    aside article h3 {
+        font-size: 1.1em;
+        color: #f2cb30;
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        text-align: center;
+        padding-top: 1em;
+        margin-top: 0;
+    }
+
+    aside article p {
+        margin-bottom: 0;
+        padding-bottom: 1.2em;
+        font-size: 0.85em;
+    }
+
+    aside > section article p:first-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 0.85em;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    #contact {
+        width: 30%;
+    }
+
+    #about {
+        width: 60%;
+        margin-right: 2em;
+    }
+
+    #contact h2 {
+        margin-bottom: 0;
+        font-size: 0.9em;
+        color: #f2cb30;
+    }
+
+    #about h2 {
+        margin-bottom: 0;
+        color: #f2cb30;
+    }
+
+    .over {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-items: baseline;
+        margin: 0;
+        justify-content: center;
+    }
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9em;
+    }
+
+    #credits h2 {
+        margin-bottom: 0;
+        padding-bottom: 0.3em;
+        padding-left: 3em;
+        color: white;
+        font-size: 0.9em;
+        background-color: #f2cb30;
+        padding-top: 0.5em;
+    }
+
+    #credits p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9em;
+        background-color: #f2cb30;
+        color: white;
+    }
+
+    #feedback {
+        background-color: #f2cb30;
+        padding-bottom: 0.5em;
+    }
+
+    #feedback a {
+        color: white;
+    }
+}
+
+/*-------------------------------------------------------------*/
+/*----------------------MEDIA VANAF 50 EM----------------------*/
+
+@media screen and (min-width: 50em) and (max-width: 65em){
+    /* nav bar    */
+
+    body > header img {
+        width: 50%;
+        display: block;
+        background-color: #f2cb30;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 1.5em 1.5em 1.5em 1.5em;
+        margin-left: 0.5em;
+    }
+
+    body p {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+
+    body header > form {
+        position: absolute;
+        top: 1em;
+        right: 0;
+    }
+
+    body header > form input{
+        width: 60%;
+    }
+
+    .to-profile {
+        position: absolute;
+        top: 4.5em;
+        right: 1em;
+    }
+
+    body > header nav {
+        width: 100%;
+        height: 5%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    body > header nav ul {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        background-color: #f2cb30;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: justify;
+        list-style-type: none;
+    }
+
+    body > header nav ul li {
+        background: #f2cb30;
+        padding-left: 0em;
+        padding-right: 2.5em;
+        height: 2em;
+        white-space: nowrap;
+        padding-top: 0.8em;
+    }
+
+    body > header nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    body > header nav ul li:first-of-type {
+        padding-left: 0.7em;
+    }
+
+    body > header nav ul li:last-of-type {
+        padding-right: 0.7em;
+    }
+
+/*-------------------------------MQ-50em------------------------------*/
+/*-----------------------------flexboxMQ50----------------------------*/
+    .flexboxMQ50 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    main {
+        width: 58%;
+        order: 1;
+        background-color: #f2cb30;
+        margin-right: 4%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .related {
+        width: 100%;
+        order: 3;
+    }
+
+    aside {
+        width: 38%;
+        background-color: rgba(232, 203, 50, 0.2);
+        order: 2;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    footer {
+        order: 4;
+    }
+
+/*--------------------------------------------------------------------*/
+/*---------------------------------MAIN-------------------------------*/
+    h1 {
+        color: white;
+        font-size: 2em;
+        margin: 0;
+        padding-top: 2%;
+        text-align: center;
+    }
+
+    #p p {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #p a {
+        color: white;
+        text-decoration: none;
+    }
+
+    main > form fieldset {
+        border: 0;
+        padding: 0;
+    }
+
+    fieldset h3 {
+        padding-left: 2%;
+        font-size: 1.1em;
+        color: white;
+        height: 1.5em;
+        margin-bottom: 0;
+    }
+
+    fieldset legend {
+        font-size: 1em;
+        color: #f2cb30;
+        padding-top: 2em;
+    }
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------RELATED-----------------------------*/
+
+    .related {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-content: flex-start;
+    }
+
+    .related h2 {
+        width: 100%;
+        text-align: center;
+        margin-top: 2em;
+        font-size: 2em;
+        color: #f2cb30;
+    }
+
+    .related article {
+        width: 31%;
+        border: 3%;
+        border-style: solid;
+        border-color: #f2cb30;
+        margin-bottom: 1em;
+    }
+
+    .related h3 {
+        color: white;
+        width: 100%;
+        background-color: #f2cb30;
+        padding: 0.7em 0em 0.7em 0em;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .related p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    section h4 {
+        font-size: 1em;
+        padding-left: 0.5em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .related li {
+        padding-left: 0.5em;
+    }
+
+    ul {
+        margin-top: 0;
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-bottom: 0;
+        padding-bottom: 1em;
+        padding-left: 0;
+    }
+
+    ul {
+        margin-top: 0;
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-bottom: 0;
+        padding-bottom: 1em;
+        padding-left: 0;
+    }
+
+    a {
+        color: #f2cb30;
+        font-size: 0.9em;
+    }
+
+    dt {
+        font-weight: 600;
+        color: #f2cb30;
+        font-size: 0.9em;
+    }
+
+    dd {
+        margin-left: 0;
+        font-size: 0.9em;
+    }
+
+    dl {
+        font-size: 0.9em;
+        padding-left: 3em;
+        margin-top: 0;
+    }
+
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------FOOTER------------------------------*/
+
+    #about {
+        width: 60%;
+        margin-right: 2em;
+    }
+
+    #contact h2 {
+        margin-bottom: 0;
+        font-size: 0.9em;
+        color: #f2cb30;
+    }
+
+    #about h2 {
+        margin-bottom: 0;
+        color: #f2cb30;
+    }
+
+    .over {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-items: baseline;
+        margin: 0;
+        justify-content: center;
+    }
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9em;
+    }
+
+    #credits h2 {
+        margin-bottom: 0;
+        padding-bottom: 0.3em;
+        padding-left: 3em;
+        color: white;
+        font-size: 0.9em;
+        background-color: #f2cb30;
+        padding-top: 0.5em;
+    }
+
+    #credits p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9em;
+        background-color: #f2cb30;
+        color: white;
+    }
+
+    #feedback {
+        background-color: #f2cb30;
+        padding-bottom: 0.5em;
+    }
+
+    #feedback a {
+        color: white;
+    }
+ }
+
+/*--------------------------------------------------------------------*/
+/*----------------------------MQ VANAF 65Eem--------------------------*/
+
+@media screen and (min-width: 65em) and (max-width: 80em){
+/* nav bar    */
+
+    body > header img {
+        width: 50%;
+        display: block;
+        background-color: #f2cb30;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 1.5em 1.5em 1.5em 1.5em;
+        margin-left: 0.5em;
+    }
+
+    body p {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+
+    body header > form {
+        position: absolute;
+        top: 1em;
+        right: 0;
+    }
+
+    body header > form input{
+        width: 60%;
+    }
+
+    .to-profile {
+        position: absolute;
+        top: 4.5em;
+        right: 1em;
+    }
+
+    body > header nav {
+        width: 100%;
+        height: 5%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    body > header nav ul {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        background-color: #f2cb30;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: justify;
+        list-style-type: none;
+    }
+
+    body > header nav ul li {
+        background: #f2cb30;
+        padding-left: 0em;
+        padding-right: 2.5em;
+        height: 2em;
+        white-space: nowrap;
+        padding-top: 0.8em;
+    }
+
+    body > header nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    body > header nav ul li:first-of-type {
+        padding-left: 0.7em;
+    }
+
+    body > header nav ul li:last-of-type {
+        padding-right: 0.7em;
+    }
+
+/*--------------------------------------------------------------------*/
+/*-----------------------------flexboxMQ50----------------------------*/
+    .flexboxMQ50 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    main {
+        width: 40%;
+        order: 1;
+        background-color: #f2cb30;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .related {
+        width: 35%;
+        order: 2;
+    }
+
+    aside {
+        width: 22%;
+        background-color: rgba(232, 203, 50, 0.2);
+        order: 3;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    footer {
+        order: 4;
+    }
+
+/*--------------------------------------------------------------------*/
+/*---------------------------------MAIN-------------------------------*/
+
+    h1 {
+        color: white;
+        font-size: 2em;
+        margin: 0;
+        padding-top: 2%;
+        text-align: center;
+    }
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------RELATED-----------------------------*/
+
+    .related h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        color: #f2cb30;
+        margin-top: 0;
+    }
+
+    .related article {
+        width: 100%;
+        border: 3%;
+        border-style: solid;
+        border-color: #f2cb30;
+        margin-bottom: 1em;
+    }
+
+    .related h3 {
+        color: white;
+        width: 100%;
+        background-color: #f2cb30;
+        padding: 0.7em 0em 0.7em 0em;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .related p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    section h4 {
+        font-size: 1em;
+        padding-left: 0.5em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .related li {
+        padding-left: 0.5em;
+    }
+
+    ul {
+        margin-top: 0;
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-bottom: 0;
+        padding-bottom: 1em;
+        padding-left: 0;
+    }
+
+    ul {
+        margin-top: 0;
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-bottom: 0;
+        padding-bottom: 1em;
+        padding-left: 0;
+    }
+
+    a {
+        color: #f2cb30;
+        font-size: 0.9em;
+    }
+
+    dt {
+        font-weight: 600;
+        color: #f2cb30;
+        font-size: 0.9em;
+    }
+
+    dd {
+        margin-left: 0;
+        font-size: 0.9em;
+    }
+
+    dl {
+        font-size: 0.9em;
+        padding-left: 3em;
+        margin-top: 0;
+    }
+
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------FOOTER------------------------------*/
+
+    #about {
+        width: 60%;
+        margin-right: 2em;
+    }
+
+    #contact h2 {
+        margin-bottom: 0;
+        font-size: 0.9em;
+        color: #f2cb30;
+    }
+
+    #about h2 {
+        margin-bottom: 0;
+        color: #f2cb30;
+    }
+
+    .over {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-items: baseline;
+        margin: 0;
+        justify-content: center;
+    }
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9em;
+    }
+
+    #credits h2 {
+        margin-bottom: 0;
+        padding-bottom: 0.3em;
+        padding-left: 3em;
+        color: white;
+        font-size: 0.9em;
+        background-color: #f2cb30;
+        padding-top: 0.5em;
+    }
+
+    #credits p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.9em;
+        background-color: #f2cb30;
+        color: white;
+    }
+
+    #feedback {
+        background-color: #f2cb30;
+        padding-bottom: 0.5em;
+    }
+
+    #feedback a {
+        color: white;
+    }
+
 }

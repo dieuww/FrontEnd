@@ -30,14 +30,16 @@
                     <li><a href="#">Stages en projecten</a></li>
                 </ul>
             </nav>
-
         </header>
         <!-- Main article - Contact formulier  -->
+        <div class="flexboxMQ50">
         <main>
             <h1>Aanmelden</h1>
-            <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
-            <p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p>
-            <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons op nemen.</p>
+            <div id="p">
+                <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+                <p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p>
+                <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons op nemen.</p>
+            </div>
 
             <form method="post" action="Formulierpagina.html">
                 <fieldset>
@@ -183,15 +185,15 @@
 
             </form>
 
-        </main>
-
         <picture>
             <source media="(min-width: 76em)" srcset="img/picture_fed_1280.png">
             <source media="(min-width: 58em)" src="img/picture_fed_800.png">
             <img src="img/picture_fed_480.png" alt="" >
         </picture>
+        </main>
 
         <!-- 3 related projects - In the spotlight -->
+
         <section class="related">
             <h2>Voorbeeld projecten van studenten</h2>
             <article>
@@ -233,9 +235,9 @@
                 <section>
                     <h4>Downloads</h4>
                     <ul>
-                        <li><a href="bron.pdf" data-kb="1267">project_CMDA_Moet_ik_rennen.pdf</a> (1.3MB)</li>
-                        <li><a href="bron.vcf">Contactgegevens_CMDA_Moet_ik_rennen.vcf</a></li>
-                        <li><a href="bron.jpg" data-kb="569">Poster_CMDA_Moet_ik_rennen.jpg</a> (569KB)</li>
+                        <li><a href="bron.pdf" data-kb="1267">project_Moet_ik_rennen.pdf</a> (1.3MB)</li>
+                        <li><a href="bron.vcf">Contactgegevens_Moet_ik_rennen.vcf</a></li>
+                        <li><a href="bron.jpg" data-kb="569">Poster_Moet_ik_rennen.jpg</a> (569KB)</li>
                     </ul>
                 </section>
             </article>
@@ -283,9 +285,9 @@
                 <section>
                     <h4>Downloads</h4>
                     <ul>
-                        <li><a href="bron.pdf" data-kb="33671">Project_CMDA_Muzieknote.pdf</a> (3.4MB)</li>
-                        <li><a href="bron.vcf">Contactgegevens_CMDA_Muzieknote.vcf</a></li>
-                        <li><a href="bron.jpg" data-kb="678">Poster_CMDA_Muzieknote.jpg</a> (678KB)</li>
+                        <li><a href="bron.pdf" data-kb="33671">Project_Muzieknote.pdf</a> (3.4MB)</li>
+                        <li><a href="bron.vcf">Contactgegevens_Muzieknote.vcf</a></li>
+                        <li><a href="bron.jpg" data-kb="678">Poster_Muzieknote.jpg</a> (678KB)</li>
                     </ul>
                 </section>
             </article>
@@ -334,24 +336,22 @@
                 <section>
                     <h4>Downloads</h4>
                     <ul>
-                        <li><a href="bron.pdf" data-kb="23513">Project_CMDA_TWOSOME.pdf</a> (2,4MB)</li>
-                        <li><a href="bron.vcf">Contactgegevens_CMDA_TWOSOME.vcf</a></li>
-                        <li><a href="bron.jpg" data-kb="1381">Poster_CMDA_TWOSOME.jpg</a> (1381KB)</li>
+                        <li><a href="bron.pdf" data-kb="23513">Project_TWOSOME.pdf</a> (2,4MB)</li>
+                        <li><a href="bron.vcf">Contactgegevens_TWOSOME.vcf</a></li>
+                        <li><a href="bron.jpg" data-kb="1381">Poster_TWOSOME.jpg</a> (1381KB)</li>
                     </ul>
                 </section>
             </article>
-
         </section>
 
         <!-- Sidebar teksten en info: Laatste mededelingen, Agenda, Twitter -->
         <aside>
+            <h2><a href="#">Laatste mededelingen</a></h2>
             <video controls>
                 <source src="vid/CMDA_V2_Design_ethics.webm" type="video/webm">
                 <source src="vid/CMDA_V2_Design_ethics.mp4" type="video/mp4">
             </video>
-
             <section>
-                <h2><a href="#">Laatste mededelingen</a></h2>
                 <article>
                     <h3>Teamproject - Usabilitylab rooster</h3>
                     <p>
@@ -371,7 +371,7 @@
                     </p>
                 </article>
                 <article>
-                    <h3>Portfoliogesprekken V1</h3>
+                    <h3>Portfolio gesprekken V1</h3>
                     <p>
                         <time datetime="2012-02-27">27 februari 2012</time>
                         <a href="#" rel="author">H.H.G. Konickx</a>
@@ -399,8 +399,8 @@
                 </article>
             </section>
 
+            <h2><a href="#">Uitagenda</a></h2>
             <section>
-                <h2><a href="#">Uitagenda</a></h2>
                 <article>
                     <h3>Fiber Festival</h3>
                     <footer>
@@ -443,6 +443,7 @@
             -->
 
         </aside>
+        </div>
 
         <!-- Footer informatie -->
         <footer>
@@ -493,15 +494,24 @@
                 </ul>
             </section>
 
+        <div class="over">
+            <section id="about" lang="en">
+                <h2>About</h2>
+                <p>CMD Amsterdam is een ontwerp opleiding voor Interactieve Media. Op de opleiding Communication &amp; Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie.</p>
+            </section>
+
             <section id="contact">
                 <h2>Contact</h2>
                 <p>CMD Amsterdam</p>
-                <p>Bezoekadres: Rhijnspoorplein 1, 1091 GC Amsterdam</p>
-                <p>Postadres: Postbus 1025, 1000 BA Amsterdam</p>
+                <p>Bezoekadres: Rhijnspoorplein 1,
+                1091 GC Amsterdam</p>
+                <p>Postadres: Postbus 1025,
+                1000 BA Amsterdam</p>
                 <p>Telefoon: 020 595 1855</p>
                 <p>Email: <a href="#" class="email">info@cmd.hva.nl</a></p>
                 <p>RSS: <a href="#" class="rss">Feed intranet</a></p>
             </section>
+        </div>
 
             <section id="search">
                 <h2>Zoeken</h2>
@@ -509,11 +519,6 @@
                     <input type="search" name="q">
                     <input type="submit" value="Zoeken">
                 </form>
-            </section>
-
-            <section id="about" lang="en">
-                <h2>About</h2>
-                <p>CMD Amsterdam is een ontwerp opleiding voor Interactieve Media. Op de opleiding Communication &amp; Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie.</p>
             </section>
 
             <section id="credits" lang="en">
