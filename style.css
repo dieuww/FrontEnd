@@ -42,6 +42,8 @@ body > header p:first-of-type {
         position: absolute;
         top: 1em;
         right: 0;
+        text-align: right;
+        margin-right: 2%;
     }
 
     body header > form input{
@@ -51,7 +53,10 @@ body > header p:first-of-type {
     .to-profile {
         position: absolute;
         top: 4.5em;
-        right: 1em;
+        right: 0;
+        text-align: right;
+        padding: 0;
+        margin-right: 2%;
     }
 
     body > header p {
@@ -166,7 +171,8 @@ body > header p:first-of-type {
         color: white;
         height: 1.5em;
         border-radius: 2em 2em 2em 2em;
-        margin-bottom: 0;
+        margin: 1% 0 0 1%;
+
     }
 
     fieldset legend {
@@ -189,7 +195,7 @@ body > header p:first-of-type {
 
     main form fieldset > label {
         display: block;
-        padding-left: 20%;
+        padding-left: 10%;
         padding-top: 2%;
     }
 
@@ -235,6 +241,12 @@ body > header p:first-of-type {
         font-size: 1.2em;
         color: white;
         text-decoration: none;
+    }
+
+    .related h2 {
+        text-align: center;
+        color: #f2cb30;
+        font-size: 1.6em;
     }
 
     aside > article h3 {
@@ -380,10 +392,12 @@ body > header p:first-of-type {
         position: absolute;
         top: 1em;
         right: 0;
+        text-align: right;
+        margin-right: 2%;
     }
 
     body header > form input{
-        width: 60%;
+        width: 70%;
     }
 
     .to-profile {
@@ -811,16 +825,21 @@ body > header p:first-of-type {
         position: absolute;
         top: 1em;
         right: 0;
+        text-align: right;
+        margin-right: 2%;
     }
 
     body header > form input{
-        width: 60%;
+        width: 70%;
     }
 
     .to-profile {
         position: absolute;
         top: 4.5em;
-        right: 1em;
+        right: 0;
+        text-align: right;
+        padding: 0;
+        margin-right: 2%;
     }
 
     body > header nav {
@@ -1208,16 +1227,21 @@ body > header p:first-of-type {
         position: absolute;
         top: 1em;
         right: 0;
+        text-align: right;
+        margin-right: 2%;
     }
 
     body header > form input{
-        width: 60%;
+        width: 70%;
     }
 
     .to-profile {
         position: absolute;
         top: 4.5em;
-        right: 1em;
+        right: 0;
+        text-align: right;
+        padding: 0;
+        margin-right: 2%;
     }
 
     body > header nav {
