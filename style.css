@@ -62,8 +62,6 @@ body > header p:first-of-type {
     body > header p {
         margin-right: 0.5em;
         font-size: 0.7em;
-        color: white;
-        display: block;
         margin-top: 0;
     }
 
@@ -80,7 +78,9 @@ body > header p:first-of-type {
         margin-left: 0.5em;
     }
 
-    /* Scrolling nav bar    */
+/*--------------------------------------------------------------------*/
+/*-------------------------Scrolling nav bar--------------------------*/
+
     body > header nav {
         overflow-x: scroll;
         overflow-y: hidden;
@@ -349,7 +349,7 @@ body > header p:first-of-type {
     footer p {
         margin-top: 0;
         margin-bottom: 0;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     #credits p {
