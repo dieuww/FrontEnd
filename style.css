@@ -907,6 +907,7 @@ body > header p:first-of-type {
 
     img {
         width: 100%;
+        margin-top: 1em;
     }
 
     .related {
@@ -1310,6 +1311,7 @@ body > header p:first-of-type {
 
     img {
         width: 100%;
+        margin-top: 1em;
     }
 
     .related {
